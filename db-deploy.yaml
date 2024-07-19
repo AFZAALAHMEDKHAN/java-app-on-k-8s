@@ -31,11 +31,11 @@ spec:
               name: vpro-db-data
       
       nodeSelector:
-        zone: us-east-2b
+        zone: us-east-2a
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
-            volumeID: vol-0c0a1f8f83ea1d811
+            volumeID: vol-0c27103fea6ca5775
             fsType: ext4
       initContainers:
         - name: busybox
