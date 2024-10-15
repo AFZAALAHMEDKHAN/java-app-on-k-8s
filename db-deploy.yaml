@@ -23,7 +23,7 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
-                SecretKeyRef:
+                secretKeyRef:
                   name: app-secret
                   key: db-pass
           volumeMounts:
@@ -34,7 +34,7 @@ spec:
       volumes:
         - name: vprodb-data
           awsElasticBlockStore:
-            volumeId: vol-08224a86038fda58c
+            volumeID: vol-08224a86038fda58c
             fsType: ext4
       initContainers:
         - name: myinit
