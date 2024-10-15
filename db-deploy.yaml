@@ -1,12 +1,9 @@
 apiVersion: apps/v1
-
 kind: Deployment
-
 metadata:
   name: vprodb #name of the deployment
   labels:
     app: vprodb
-
 spec:
   selector:
     matchLabels: #any pod with the below label will already be considered in this deployment
