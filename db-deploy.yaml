@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     matchLabels: #any pod with the below label will already be considered in this deployment
-      app:Vprodb
+      app: vprodb
   replicas: 1
   template:
     metadata:
