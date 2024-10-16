@@ -11,7 +11,7 @@ spec:
   replicas: 1
   template:
     metadata:
-      label:
+      labels:
         app: vpromc
     spec:
       containers:
