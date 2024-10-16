@@ -11,22 +11,25 @@ spec:
   replicas: 1
   template:
     metadata:
-      labels:
+      labels: 
         app: vprormq
     spec:
       containers:
         - name: vprormq
           image: rabbitmq
-          ports:
+          ports: 
             - name: vprormq-port
-              containerPort: 15672
+              containerPort: 5672
           env:
             - name: RABBITMQ_DEFAULT_PASS
               valueFrom:
                 secretKeyRef:
-                  name: app-secret
-                  key: rmq-pass
-            - name: RAABITMQ_DEFAULT_USER
+                    name: app-secret
+                    key: rmq-pass
+
+            - name: RABBITMQ_DEFAULT_USER
               value: "guest"
+
+
 
 
