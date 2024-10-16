@@ -29,7 +29,6 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: vprodb-data
-
       nodeSelector:
         zone:us-east-1a
       volumes:
@@ -37,7 +36,6 @@ spec:
           awsElasticBlockStore:
             volumeID: vol-0cf35815b9c8dcbeb
             fsType: ext4
-      
       initContainers:
         - name: afzaal-init
           image: busybox:latest
