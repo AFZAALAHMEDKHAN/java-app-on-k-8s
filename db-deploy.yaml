@@ -34,7 +34,7 @@ spec:
       volumes:
         - name: vprodb-data
           awsElasticBlockStore:
-            volumeID: vol-0cf35815b9c8dcbeb
+            volumeID: vol-0c045c7455c4eda88
             fsType: ext4
       initContainers:
         - name: afzaal-init
