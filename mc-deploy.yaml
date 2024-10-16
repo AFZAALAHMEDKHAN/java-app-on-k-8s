@@ -11,7 +11,8 @@ spec:
   replicas: 1
   template:
     metadata:
-      label: vpromc
+      label:
+        app: vpromc
     spec:
       containers:
         - name: vpromc
@@ -19,4 +20,3 @@ spec:
           ports:
             - name: vpromc-port
               containerPort: 11211
-              
